@@ -1,0 +1,33 @@
+
+Bug Title: Transaction history page crashes
+
+Description:
+Whenever a user tries to view the transaction history, the page loads infinitely and then shows a 500 Internal Server Error.
+This occurs specifically when the user has more than 50 transactions in their account. The bug was found during the regression test on February 28, 2025.
+
+Steps to Reproduce:
+1. Login to the Banking App.
+2. Navigate to "Account Overview".
+3. Tap on "Transaction History".
+4. Observe the page load behavior and error message.
+
+Expected Result:
+Transaction history should load successfully, showing all past transactions in chronological order.
+
+Actual Result:
+Page loads infinitely and eventually returns a 500 Internal Server Error.
+
+Environment:
+- Device: Samsung Galaxy S22
+- OS: Android 14
+- App Version: v3.5.1
+- Network: WiFi (100 Mbps)
+
+Priority: High  
+Severity: Critical  
+Reported By: Tester User  
+Date: 28-Feb-2025
+
+Attached Evidence:
+- Screenshot showing the error (if available)
+- Backend logs capturing the server error (if available)

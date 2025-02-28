@@ -1,0 +1,1 @@
+<h2>Dashboard - Role: {{ role }}</h2> <a href="{{ url_for('main.report_bug') }}">Report Bug</a> <ul>{% for bug in bugs %}<li>{{ bug.title }} - {{ bug.status }}</li>{% endfor %}</ul>
